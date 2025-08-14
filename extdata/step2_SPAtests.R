@@ -1,7 +1,6 @@
 #!/usr/bin/env Rscript
 
 options(stringsAsFactors=F)
-.libPaths("lib")
 library(SAIGE)
 BLASctl_installed <- require(RhpcBLASctl)
 library(optparse)

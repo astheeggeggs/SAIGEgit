@@ -3,7 +3,6 @@
 options(stringsAsFactors=F)
 
 ## load R libraries
-.libPaths("lib")
 library(SAIGE)
 require(optparse)
 print(sessionInfo())

@@ -1,6 +1,5 @@
 # Read source and libraries
 
-.libPaths("lib")
 library(SAIGE)
 library(data.table)
 library(Matrix)

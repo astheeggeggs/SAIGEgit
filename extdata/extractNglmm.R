@@ -3,10 +3,8 @@
 options(stringsAsFactors=F)
 
 ## load R libraries
-.libPaths("lib")
 library(SAIGE)
-require(optparse) #install.packages("optparse")
-
+require(optparse)
 print(sessionInfo())
 
 ## set list of cmd line arguments
