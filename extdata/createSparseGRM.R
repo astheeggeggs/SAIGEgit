@@ -1,12 +1,11 @@
-#!/usr/bin/env -S pixi run --manifest-path /app/pixi.toml Rscript
+#!/usr/bin/env Rscript
 
 options(stringsAsFactors=F)
 
 ## load R libraries
-#library(SAIGE, lib.loc="../../install_0.93")
+.libPaths("lib")
 library(SAIGE)
-require(optparse) #install.packages("optparse")
-
+require(optparse)
 print(sessionInfo())
 
 ## set list of cmd line arguments
@@ -36,8 +35,6 @@ option_list <- list(
   make_option("--maxMissingRateforGRM", type="numeric", default=0.15,
     help="Optional. Maximum missing rate of markers used for GRM")
 )
-
-
 
 ## list of options
 parser <- OptionParser(usage="%prog [options]", option_list=option_list)

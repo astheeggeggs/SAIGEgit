@@ -1,14 +1,13 @@
-#!/usr/bin/env -S pixi run --manifest-path /app/pixi.toml Rscript
+#!/usr/bin/env Rscript
 
-#options(stringsAsFactors=F, scipen = 999)
 options(stringsAsFactors=F)
+.libPaths("lib")
 library(SAIGE)
 BLASctl_installed <- require(RhpcBLASctl)
 library(optparse)
 library(data.table)
 library(methods)
 print(sessionInfo())
-
 
 option_list <- list(
   make_option("--vcfFile", type="character",default="",

@@ -1,11 +1,9 @@
-#!/usr/bin/env -S pixi run --manifest-path /app/pixi.toml Rscript
+#!/usr/bin/env Rscript
 
 options(stringsAsFactors=F)
 
 ## load R libraries
-#library(SAIGE, lib.loc="../../install_dir/0.38")
-#library(SAIGE, lib.loc="../../install_dir/0.36.6")
-#library(SAIGE, lib.loc="/net/hunt/zhowei/project/imbalancedCaseCtrlMixedModel/Rpackage_SPAGMMAT/installSAIGEFolder/0.44.6_Neff")
+.libPaths("lib")
 library(SAIGE)
 require(optparse) #install.packages("optparse")
 

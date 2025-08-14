@@ -1,11 +1,9 @@
-#!/usr/bin/env -S pixi run --manifest-path /app/pixi.toml Rscript
+#!/usr/bin/env Rscript
 
 options(stringsAsFactors=F)
-
-## load R libraries
+.libPaths("lib")
 library(SAIGE)
-require(optparse) #install.packages("optparse")
-
+require(optparse)
 print(sessionInfo())
 
 ## set list of cmd line arguments
