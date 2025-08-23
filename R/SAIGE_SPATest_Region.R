@@ -575,7 +575,7 @@ SAIGE.Region = function(mu,
                         
                       } else {
                         Score_cond = wStatVec_cond[tempPos]
-                        Phi_cond = wadjVarSMat_cond[tempPos, tempPos]
+                        Phi_cond = wadjVarSMat_cond[tempPos, tempPos, drop=FALSE]
                       }
                       
                       groupOutList_cond = get_SKAT_pvalue(Score_cond,
